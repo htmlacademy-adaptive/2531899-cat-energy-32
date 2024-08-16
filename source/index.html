@@ -11,14 +11,14 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="#" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
     </a>
-    <a class="main-header__text-logo" href="index.html">
-      <img src="#" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Текстовый логотип Cat Energy.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle button-burger" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -42,7 +42,7 @@
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <img src="#" width="280" height="270" alt="Упаковка корма Cat Energy.">
-        <a class="hero__button button" href="scheme_selection.html">Подобрать программу</a>
+        <a class="hero__button button" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="options">
@@ -51,12 +51,12 @@
         <li class="options__item option">
           <h3 class="option__title">Похудение</h3>
           <p class="option__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="option__catalog-link" href="catalog_weight_loss.html">Каталог Slim</a>
+          <a class="option__catalog-link" href="#">Каталог Slim</a>
         </li>
         <li class="options__item option">
           <h3 class="option__title">Набор массы</h3>
           <p class="option__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="option__catalog-link" href="catalog_weight_gain.html">Каталог Pro</a>
+          <a class="option__catalog-link" href="#">Каталог Pro</a>
         </li>
       </ul>
     </section>
@@ -81,11 +81,11 @@
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="example__statistic">
-          <dt>5 кг</dt>
-          <dd>снижение веса</dd>
-          <dt>60 дней</dt>
-          <dd>затрачено времени</dd>
+        <dl class="example__statistic stats-list">
+          <dt class="stats-list__description">снижение веса</dt>
+          <dd class="stats-list__item">5 кг</dd>
+          <dt class="stats-list__description">затрачено времени</dt>
+          <dd class="stats-list__item">60 дней</dd>
         </dl>
         <p>Затраты на питание: 15 000 руб.</p>
         <!-- слайдер с двумя котами -->
@@ -101,26 +101,26 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__text-logo" href="index.html">
-      <img src="#" width="128" height="24" alt="Текстовый логотип Cat Energy.">
+    <a class="footer__text-logo logo" href="index.html">
+      <img class="logo__image logo__image--text" src="#" width="128" height="24" alt="Текстовый логотип Cat Energy.">
     </a>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social__list">
-        <li class="footer-social__item footer-social__item--vk">
-          <a class="footer-social__link" href="#">
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link--vk" href="#">
             <!-- svg -->
             <span class="visually-hidden">вКонтакте</span>
           </a>
         </li>
-        <li class="footer-social__item footer-social__item--yt">
-          <a class="footer-social__link" href="#">
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link--yt" href="#">
             <!-- svg -->
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
-        <li class="footer-social__item footer-social__item--telegram">
-          <a class="footer-social__link" href="#">
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link--telegram" href="#">
             <!-- svg -->
             <span class="visually-hidden">Telegram</span>
           </a>
