@@ -1,0 +1,25 @@
+// .additional-products {
+
+// }
+
+.additional-products__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-color-text;
+}
+
+.additional-products__list {
+  list-style: none;
+}
+
+// .additional-products__item {
+
+// }
+
+.additional-products__promo {
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-color-text;
+  background-color: rgba($accent-color, 0.85);
+}

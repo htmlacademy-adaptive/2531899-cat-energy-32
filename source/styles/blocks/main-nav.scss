@@ -1,0 +1,31 @@
+// .main-nav {
+
+// }
+
+// .main-nav__toggle {
+
+// }
+
+// .main-nav__wrapper {
+
+// }
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $dark-color-text;
+  text-transform: uppercase;
+}
+
+// .main-nav__item--current {
+
+// }
+
+.main-nav__link {
+  text-decoration: none;
+}

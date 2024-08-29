@@ -1,0 +1,32 @@
+// .product-card {
+
+// }
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $lighter-title-color;
+  text-transform: uppercase;
+}
+
+.product-card__title--additional {
+  line-height: 16px;
+}
+
+.product-card__properties {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__properties--additional {
+  line-height: 14px;
+}
+
+// .product-card__button {
+
+// }

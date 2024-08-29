@@ -1,0 +1,29 @@
+.example {
+  background-color: $example-background-color;
+}
+
+// .example__wrapper {
+
+// }
+
+.example__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $dark-color-text;
+}
+
+// .example__text {
+
+// }
+
+// .example__statistic {
+
+// }
+
+.example_cost {
+  font-family: $secondary-font;
+  line-height: 20px;
+  color: $dark-color-text;
+  text-transform: uppercase;
+}

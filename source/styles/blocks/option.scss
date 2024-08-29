@@ -1,0 +1,25 @@
+.option {
+  background-color: $darkened-background-color;
+  list-style: none;
+}
+
+.option__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  color: $dark-color-text;
+  text-transform: uppercase;
+}
+
+// .option__description {
+
+// }
+
+.option__catalog-link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $dark-color-text;
+  text-transform: uppercase;
+  text-decoration: none;
+}

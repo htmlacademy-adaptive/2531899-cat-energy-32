@@ -1,0 +1,21 @@
+// .more-products {
+
+// }
+
+.more-products__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $lighter-title-color;
+  text-transform: uppercase;
+}
+
+.more-products__subtitle {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.more-products__button {
+  color: $base-color-text;
+  background-color: $darkened-background-color;
+}
