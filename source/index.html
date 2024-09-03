@@ -16,10 +16,17 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
+      </picture>
     </a>
-    <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+    <a class="main-header__logo logo" href="index.html" tabindex="-1">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21">
+        <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-burger" type="button">
@@ -56,12 +63,12 @@
     <section class="options">
       <h2 class="visually-hidden">Доступные опции</h2>
       <ul class="options__list">
-        <li class="options__item option">
+        <li class="options__item option option--slim">
           <h3 class="option__title">Похудение</h3>
           <p class="option__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="option__catalog-link" href="#">Каталог Slim</a>
         </li>
-        <li class="options__item option">
+        <li class="options__item option option--pro">
           <h3 class="option__title">Набор массы</h3>
           <p class="option__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="option__catalog-link" href="#">Каталог Pro</a>
@@ -86,7 +93,7 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper slider">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="example__statistic stats-list">
@@ -104,6 +111,9 @@
           <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x.png 2x" width="560" height="512">
           <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после снижения веса.">
         </picture>
+        <button class="slider__button" type="button">
+          <span class="visually-hidden">Изменить внешний вид кота</span>
+        </button>
       </div>
     </section>
     <section class="contacts">
@@ -121,7 +131,7 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__text-logo logo" href="index.html">
-      <img class="logo__image logo__image--text" src="#" width="128" height="24" alt="Текстовый логотип Cat Energy.">
+      <img class="logo__image logo__image--text" src="images/logo-footer.svg" width="128" height="24" alt="Текстовый логотип Cat Energy.">
     </a>
     <section class="main-footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>

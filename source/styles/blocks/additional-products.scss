@@ -23,3 +23,14 @@
   color: $light-color-text;
   background-color: rgba($accent-color, 0.85);
 }
+
+.additional-products__promo::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 78px;
+  height: 81px;
+}

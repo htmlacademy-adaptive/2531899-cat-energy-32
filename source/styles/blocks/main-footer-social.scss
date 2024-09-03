@@ -10,18 +10,41 @@
 
 // }
 
-// .main-footer-social__link {
+.main-footer-social__link::before {
+  content: "";
+  display: block;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #666666;
+}
 
-// }
+.main-footer-social__link--vk::before {
+  mask-image: url("../../icons/stack.svg#social-logo-vk");
+  width: 27px;
+  height: 17px;
+}
 
-// .main-footer-social__link--vk {
+.main-footer-social__link--yt::before {
+  mask-image: url("../../icons/stack.svg#social-logo-youtube");
+  width: 24px;
+  height: 19px;
+}
 
-// }
+.main-footer-social__link--telegram::before {
+  mask-image: url("../../icons/stack.svg#social-logo-telegram");
+  width: 20px;
+  height: 18px;
+}
 
-// .main-footer-social__link--yt {
+.main-footer-social__link:hover::before {
+  background-color: $accent-color;
+}
 
-// }
+.main-footer-social__link:focus-visible::before {
+  background-color: $accent-color;
+}
 
-// .main-footer-social__link--telegram {
-
-// }
+.main-footer-social__link:active::before {
+  background-color: rgba($accent-color, 0.5);
+}

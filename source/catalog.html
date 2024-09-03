@@ -16,10 +16,17 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
+      </picture>
     </a>
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21">
+        <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-burger" type="button">
@@ -274,7 +281,7 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__text-logo logo" href="index.html">
-      <img class="logo__image logo__image--text" src="#" width="128" height="24" alt="Текстовый логотип Cat Energy.">
+      <img class="logo__image logo__image--text" src="images/logo-footer.svg" width="128" height="24" alt="Текстовый логотип Cat Energy.">
     </a>
     <section class="main-footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>

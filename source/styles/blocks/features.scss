@@ -17,6 +17,36 @@
 
 // }
 
+.features__item::before {
+  content: "";
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $accent-color;
+  width: 60px;
+  height: 60px;
+}
+
+.features__item:nth-child(1)::before {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+}
+
+.features__item:nth-child(2)::before {
+  background-image: url("../../icons/stack.svg#icon-glass");
+  background-size: 27px 29px;
+}
+
+.features__item:nth-child(3)::before {
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 26px 30px;
+}
+
+.features__item:nth-child(4)::before {
+  background-image: url("../../icons/stack.svg#icon-scales");
+  background-size: 26px 31px;
+}
+
 // .features__description {
 
 // }

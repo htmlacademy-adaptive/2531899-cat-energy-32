@@ -9,4 +9,30 @@
 .main-footer__developer-logo {
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.main-footer__developer-logo::after {
+  content: "";
+  display: block;
+  mask-image: url("../../icons/stack.svg#logo-html-academy");
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #666666;
+  width: 27px;
+  height: 34px;
+}
+
+.main-footer__developer-logo:hover::after {
+  background-color: $accent-color;
+}
+
+.main-footer__developer-logo:focus-visible::after {
+  background-color: $accent-color;
+}
+
+.main-footer__developer-logo:active {
+  opacity: 0.5;
 }
