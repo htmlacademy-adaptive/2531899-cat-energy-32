@@ -1,12 +1,23 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+html {
+  height: 100%;
+}
+
 body {
   font-family: $primary-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
+  max-width: 1440px;
   margin: 0 auto;
   height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {

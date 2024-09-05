@@ -9,7 +9,18 @@
   color: $dark-color-text;
 }
 
+.additional-products__wrapper {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+  }
+}
+
 .additional-products__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 

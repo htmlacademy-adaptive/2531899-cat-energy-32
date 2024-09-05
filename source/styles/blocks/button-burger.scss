@@ -9,6 +9,10 @@
   width: 67px;
   height: 50px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .button-burger:hover {

@@ -2,10 +2,24 @@
 
 // }
 
-// .options__list {
+.options__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 20px;
 
-// }
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 
-// .options__item {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 1440px;
+  }
+}
 
-// }
+.options__item {
+  padding: 20px;
+}

@@ -1,5 +1,10 @@
 .main-footer {
   background-color: $darkened-background-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 // .main-footer__text-logo {
