@@ -1,32 +1,83 @@
-// .more-products {
+.more-products {
+  display: grid;
+  padding: 25px 20px;
+  text-align: center;
 
-// }
+  @media (min-width: $tablet-width) {
+    padding: 50px 37px 40px;
+    background: none;
+    margin-top: 82px;
+    border: solid 1px #f2f2f2;
+    align-content: center;
+    justify-items: center;
+    grid-template-rows: auto auto 1fr;
+  }
+}
 
 .more-products::before {
   content: "";
   display: block;
   background-image: url("../../icons/stack.svg#icon-plus");
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 30px;
-  height: 30px;
+  background-size: 30px 30px;
+  width: 100%;
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 60px 60px;
+    height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 60px 60px;
+    height: 100px;
+  }
 }
 
 .more-products__title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 100;
   color: $lighter-title-color;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 21px;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
+  }
 }
 
 .more-products__subtitle {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 175px;
+  }
 }
 
 .more-products__button {
   color: $base-color-text;
   background-color: $darkened-background-color;
+}
+
+.more-products__button:hover,
+.more-products__button:focus-visible,
+.more-products__button:active {
+  background-color: #ebebeb;
+  color: $base-color-text;
 }

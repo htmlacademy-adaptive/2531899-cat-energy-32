@@ -1,20 +1,110 @@
-// .contacts {
+.contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 110px auto 1fr;
+    grid-template-rows: 95px auto 106px;
+  }
+}
 
-// }
+.contacts__wrapper {
+  margin: 0 20px;
+  padding: 26px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    padding: 60px 40px;
+    gap: 308px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: auto;
+    max-width: 565px;
+    margin: 0;
+    padding: 60px 78px 60px 80px;
+    gap: 87px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    z-index: 2;
+    background-color: $light-color-text;
+  }
+}
 
 .contacts--catalog {
   background-color: $darkened-background-color;
+}
+
+.contacts img {
+  display: block;
+}
+
+.contacts iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 362px;
+  background-image:
+    image-set(
+      url("../../images/location-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/location-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image:
+      image-set(
+        url("../../images/location-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/location-tablet@2x.jpg") type("image/jpeg") 2x
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    background-image:
+      image-set(
+        url("../../images/location-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/location-desktop@2x.jpg") type("image/jpeg") 2x
+      );
+  }
 }
 
 .contacts__title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 100;
   text-transform: uppercase;
   color: $title-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
   font-style: normal;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+    display: grid;
+    align-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__address p {
+  margin: 0;
 }

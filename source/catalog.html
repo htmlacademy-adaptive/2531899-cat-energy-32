@@ -14,18 +14,18 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--catalog main-header--closed main-header--nojs">
     <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+      <picture class="logo__image logo__image--icon">
+        <source type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
         <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy, кот в красном супергеройском костюме на фоне оранжевого круга.">
       </picture>
     </a>
-    <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21">
-        <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+    <a class="main-header__logo logo" href="index.html" tabindex="-1">
+      <picture class="logo__image logo__image--text">
+        <source type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-text.svg" width="118" height="21">
+        <img src="images/logo-text.svg" width="101" height="20" alt="Текстовый логотип Cat Energy.">
       </picture>
     </a>
     <nav class="main-nav">
@@ -34,11 +34,11 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Подбор программы</a>
@@ -53,9 +53,9 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item product-card">
-            <a href="#">
+            <a class="product-card__image" href="#">
               <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-image-chicken-small-desktop@1x.png 1x, images/catalog-image-chicken-small-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog-image-chicken-small-desktop@1x.png 1x, images/catalog-image-chicken-small-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-image-chicken-small-tablet@1x.png 1x, images/catalog-image-chicken-small-tablet@2x.png 2x" width="200" height="210">
                 <img src="images/catalog-image-chicken-small-mobile@1x.png" srcset="images/catalog-image-chicken-small-mobile@2x.png 2x" width="140" height="107" alt="Оранжевая упаковка товара Cat Energy PRO 500 г с курицей">
               </picture>
@@ -74,9 +74,9 @@
             <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
-            <a href="#">
+            <a class="product-card__image" href="#">
               <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-image-chicken-big-desktop@1x.png 1x, images/catalog-image-chicken-big-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog-image-chicken-big-desktop@1x.png 1x, images/catalog-image-chicken-big-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-image-chicken-big-tablet@1x.png 1x, images/catalog-image-chicken-big-tablet@2x.png 2x" width="200" height="210">
                 <img src="images/catalog-image-chicken-big-mobile@1x.png" srcset="images/catalog-image-chicken-big-mobile@2x.png 2x" width="140" height="107" alt="Оранжевая упаковка товара Cat Energy PRO 1000 г с курицей">
               </picture>
@@ -95,9 +95,9 @@
             <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
-            <a href="#">
+            <a class="product-card__image" href="#">
               <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-image-fish-small-desktop@1x.png 1x, images/catalog-image-fish-small-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog-image-fish-small-desktop@1x.png 1x, images/catalog-image-fish-small-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-image-fish-small-tablet@1x.png 1x, images/catalog-image-fish-small-tablet@2x.png 2x" width="200" height="210">
                 <img src="images/catalog-image-fish-small-mobile@1x.png" srcset="images/catalog-image-fish-small-mobile@2x.png 2x" width="140" height="107" alt="Зелёная упаковка товара Cat Energy PRO 500 г с рыбой">
               </picture>
@@ -116,9 +116,9 @@
             <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
-            <a href="#">
+            <a class="product-card__image" href="#">
               <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-image-fish-big-desktop@1x.png 1x, images/catalog-image-fish-big-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog-image-fish-big-desktop@1x.png 1x, images/catalog-image-fish-big-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-image-fish-big-tablet@1x.png 1x, images/catalog-image-fish-big-tablet@2x.png 2x" width="200" height="210">
                 <img src="images/catalog-image-fish-big-mobile@1x.png" srcset="images/catalog-image-fish-big-mobile@2x.png 2x" width="140" height="107" alt="Зелёная упаковка товара Cat Energy PRO 1000 г с рыбой">
               </picture>
@@ -137,9 +137,9 @@
             <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
-            <a href="#">
+            <a class="product-card__image" href="#">
               <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-image-buckwheat-small-desktop@1x.png 1x, images/catalog-image-buckwheat-small-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog-image-buckwheat-small-desktop@1x.png 1x, images/catalog-image-buckwheat-small-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-image-buckwheat-small-tablet@1x.png 1x, images/catalog-image-buckwheat-small-tablet@2x.png 2x" width="200" height="210">
                 <img src="images/catalog-image-buckwheat-small-mobile@1x.png" srcset="images/catalog-image-buckwheat-small-mobile@2x.png 2x" width="140" height="107" alt="Синяя упаковка товара Cat Energy Slim 500 г с гречкой">
               </picture>
@@ -158,9 +158,9 @@
             <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
-            <a href="#">
+            <a class="product-card__image" href="#">
               <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-image-buckwheat-big-desktop@1x.png 1x, images/catalog-image-buckwheat-big-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog-image-buckwheat-big-desktop@1x.png 1x, images/catalog-image-buckwheat-big-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-image-buckwheat-big-tablet@1x.png 1x, images/catalog-image-buckwheat-big-tablet@2x.png 2x" width="200" height="210">
                 <img src="images/catalog-image-buckwheat-big-mobile@1x.png" srcset="images/catalog-image-buckwheat-big-mobile@2x.png 2x" width="140" height="107" alt="Синяя упаковка товара Cat Energy Slim 1000 г с гречкой">
               </picture>
@@ -179,9 +179,9 @@
             <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
-            <a href="#">
+            <a class="product-card__image" href="#">
               <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-image-rice-small-desktop@1x.png 1x, images/catalog-image-rice-small-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog-image-rice-small-desktop@1x.png 1x, images/catalog-image-rice-small-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-image-rice-small-tablet@1x.png 1x, images/catalog-image-rice-small-tablet@2x.png 2x" width="200" height="210">
                 <img src="images/catalog-image-rice-small-mobile@1x.png" srcset="images/catalog-image-rice-small-mobile@2x.png 2x" width="140" height="107" alt="Фиолетовая упаковка товара Cat Energy Slim 500 г с рисом">
               </picture>
@@ -252,7 +252,9 @@
             <a class="product-card__button button" href="#">Заказать</a>
           </li>
         </ul>
-        <p class="additional-products__promo">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="additional-products__promo">
+          <p>Закажите все <br> и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="news">
@@ -269,50 +271,52 @@
       </div>
     </section>
     <section class="contacts contacts--catalog">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__address">
-        <p>ул. Большая Конюшенная, д. 19/8</p>
-        <p>Санкт-Петербург</p>
-      </address>
-      <picture>
-        <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x" width="1440" height="400">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">
+          <p>ул. Большая Конюшенная, д. 19/8</p>
+          <p>Санкт-Петербург</p>
+        </address>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1333.955674827906!2d30.3217363024985!3d59.93753156571768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1725969320230!5m2!1sru!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Местоположение Cat Energy на карте города."></iframe>
+      <!-- <picture>
+        <source type="image/jpeg" media="(min-width: 1280px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x" width="1440" height="400">
         <source type="image/jpeg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x" width="768" height="400">
         <img src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Местоположение Cat Energy на карте города.">
-      </picture>
+      </picture> -->
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__text-logo logo" href="index.html">
-      <img class="logo__image logo__image--text" src="images/logo-footer.svg" width="128" height="24" alt="Текстовый логотип Cat Energy.">
-    </a>
-    <section class="main-footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="main-footer-social__list">
-        <li class="main-footer-social__item">
-          <a class="main-footer-social__link main-footer-social__link--vk" href="#">
-            <!-- svg -->
-            <span class="visually-hidden">вКонтакте</span>
-          </a>
-        </li>
-        <li class="main-footer-social__item">
-          <a class="main-footer-social__link main-footer-social__link--yt" href="#">
-            <!-- svg -->
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-        <li class="main-footer-social__item">
-          <a class="main-footer-social__link main-footer-social__link--telegram" href="#">
-            <!-- svg -->
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <a class="main-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <p><span class="visually-hidden">Создано в</span>HTML Academy</p>
-      <!-- svg -->
-    </a>
+    <div class="main-footer__wrapper">
+      <a class="main-footer__text-logo logo" href="index.html">
+        <img class="logo__image logo__image--text" src="images/logo-footer.svg" width="128" height="25" alt="Текстовый логотип Cat Energy.">
+      </a>
+      <section class="main-footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="main-footer-social__list">
+          <li class="main-footer-social__item">
+            <a class="main-footer-social__link main-footer-social__link--vk" href="#">
+              <span class="visually-hidden">вКонтакте</span>
+            </a>
+          </li>
+          <li class="main-footer-social__item">
+            <a class="main-footer-social__link main-footer-social__link--yt" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+          <li class="main-footer-social__item">
+            <a class="main-footer-social__link main-footer-social__link--telegram" href="#">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <a class="main-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <p><span class="visually-hidden">Создано в</span>HTML Academy</p>
+      </a>
+    </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>

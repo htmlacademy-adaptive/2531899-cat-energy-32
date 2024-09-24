@@ -6,34 +6,74 @@
   padding: 0;
   border: none;
   position: relative;
-  margin-left: 50px;
+
+  @media (max-width: $mobile-width-only) {
+    grid-column: 2 / 4;
+    grid-row: 1 / -1;
+    justify-self: center;
+    height: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 4;
+    grid-row: 1 / -1;
+    justify-self: center;
+    height: 100%;
+  }
 }
 
-.slider__button::before {
+.slider__button::after {
   content: "";
   display: block;
   cursor: col-resize;
-  background-image: url("../../icons/stack.svg#slider-control");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  mask-image: url("../../icons/stack.svg#slider-control");
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: 24px 18px;
+  background-color: #666666;
   width: 40px;
   height: 40px;
-  border: none;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.slider__button:hover {
+.slider__button::before {
+  content: "";
+  display: block;
+  cursor: col-resize;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: $light-color-text;
+  width: 36px;
+  height: 36px;
+  border: solid 2px #666666;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__button:hover,
+.slider__button:focus-visible,
+.slider__button:hover::after,
+.slider__button:focus-visible::after {
   background-color: $accent-color;
 }
 
-.slider__button:focus-visible {
-  background-color: $accent-color;
+.slider__button:active,
+.slider__button:active::after {
+  background-color: #9ecc82;
 }
 
-.slider__button:active {
-  opacity: 0.6;
+.slider__button:hover::before,
+.slider__button:focus-visible::before {
+  border-color: $accent-color;
+}
+
+.slider__button:active::before {
+  border-color: #9ecc82;
 }

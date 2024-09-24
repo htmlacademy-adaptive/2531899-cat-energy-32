@@ -7,4 +7,18 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:focus-visible {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba($light-color-text, 0.4);
 }

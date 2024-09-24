@@ -1,10 +1,59 @@
-// .news {
+.news {
+  margin: 0 20px 40px;
 
-// }
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 104px;
+  }
+}
 
 .news__title {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 100;
   color: $dark-color-text;
+  margin: 0;
+  padding-bottom: 32px;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 66px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.news__title::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100vw;
+  height: 2px;
+  background: $accent-color;
+  box-shadow: 100vw 0 0 0 $accent-color;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+  }
 }
