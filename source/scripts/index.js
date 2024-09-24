@@ -3,6 +3,7 @@ const navMain = document.querySelector('.main-header');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-header--nojs');
+navMain.classList.add('main-header--closed');
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-header--closed')) {
