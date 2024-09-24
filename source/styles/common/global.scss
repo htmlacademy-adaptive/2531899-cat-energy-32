@@ -1,1 +1,30 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $base-color-text;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
