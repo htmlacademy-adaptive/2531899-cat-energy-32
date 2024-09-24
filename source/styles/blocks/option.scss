@@ -99,7 +99,6 @@
 .option--pro {
   @media (max-width: $mobile-width-only) {
     grid-template-columns: 7px 70px 1fr;
-    // grid-template-rows: 50px auto auto;
     padding: 24px 20px 17px 13px;
   }
 
@@ -237,7 +236,7 @@
   mask-size: contain;
   width: 24px;
   height: 12px;
-  background-color: #000000;
+  background-color: $dark-color-text;
   transform-origin: left center;
 
   @media (max-width: $mobile-width-only) {

@@ -2,12 +2,12 @@
   background-color: $example-background-color;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(#ffffff 57%, #eaeaea 57%);
+    background: linear-gradient($light-color-text 57%, $example-background-color 57%);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    background: linear-gradient(#ffffff 31%, #eaeaea 31%);
+    background: linear-gradient($light-color-text 31%, $example-background-color 31%);
   }
 }
 
@@ -35,7 +35,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // margin: 0 110px;
     padding: 69px 0 75px;
     grid-template-areas:
       "title picture"
