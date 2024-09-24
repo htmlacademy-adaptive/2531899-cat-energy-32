@@ -1,7 +1,7 @@
 .contacts {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 110px auto 1fr;
+    grid-template-columns: calc(50% - 610px) auto 2fr;
     grid-template-rows: 95px auto 106px;
   }
 }

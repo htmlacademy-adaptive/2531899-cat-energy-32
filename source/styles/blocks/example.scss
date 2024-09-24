@@ -35,13 +35,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    // margin: 0 110px;
     padding: 69px 0 75px;
     grid-template-areas:
       "title picture"
       "text  picture"
       "stats picture"
       "cost  picture";
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 

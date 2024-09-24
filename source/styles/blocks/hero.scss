@@ -30,13 +30,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
     padding: 29px 0 52px;
     display: grid;
     row-gap: 40px;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: 80px 367px auto;
     align-content: center;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -47,11 +49,11 @@
     position: absolute;
     top: 0;
     left: 50%;
-    background-image: linear-gradient(rgba($accent-color, 0.85) 50%, rgba($accent-color, 0.85) 50%), image-set(url("../../images/index-background-desktop@2x.jpg") type("image/jpeg") 2x, url("../../images/index-background-desktop@1x.jpg") type("image/jpeg") 1x), linear-gradient(to right, #515156 50%, #424146 50%);
+    background-image: linear-gradient(rgba($accent-color, 0.85) 50%, rgba($accent-color, 0.85) 50%), image-set(url("../../images/index-background-desktop@2x.jpg") type("image/jpeg") 2x, url("../../images/index-background-desktop@1x.jpg") type("image/jpeg") 1x), linear-gradient(to right, #424146 50%, #424146 50%);
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 100vw;
+    background-size: auto;
+    width: 50vw;
     height: 694px;
     z-index: -1;
   }

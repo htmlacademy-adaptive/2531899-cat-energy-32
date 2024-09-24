@@ -6,7 +6,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px 104px;
+    // margin: 0 110px 104px;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto 104px;
   }
 }
 
